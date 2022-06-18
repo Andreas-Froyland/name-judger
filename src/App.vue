@@ -6,7 +6,7 @@
       </select>
     </header>
     <Homepage />
-    <footer class="absolute bottom-0 left-0 right-0 text-center text-xs text-gray-500 mb-2">
+    <footer class="bg-base-200 text-center text-xs text-gray-500 mb-2">
     <p class="mb-2">
         <a href="https://github.com/andreasNordstrand/name-judger">Made by Ananords - Visit the Github repo for more information</a>
       </p>
