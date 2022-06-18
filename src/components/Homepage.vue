@@ -1,15 +1,15 @@
 <template>
-  <div class="bg-base-200 w-screen h-screen">
+  <div class="bg-base-200 w-screen h-screen pb-24">
     <div class="pt-24">
-      <h1 class="text-center text-7xl text-base-content mb-6">Name Judger</h1>
+      <h1 class="text-center text-4xl sm:text-5xl lg:text-7xl text-base-content mb-4">Name Judger</h1>
     </div>
     <div
-      class="pt-24 w-2/3 text-center text-4xl pb-6 m-auto"
+      class="pt-12 w-2/3 text-center text-2xl sm:text-3xl lg:text-4xl pb-6 m-auto"
       v-if="showText"
     >
       <span v-if="dataLoading">Loading data for: </span>
 
-      <span class=" capitalize">
+      <span class="capitalize">
         {{person.name}},
       </span>
       
@@ -17,25 +17,25 @@
         We could not find any data about your name...
       </span>
 
-      <span class="pb-6" v-if="person.age">
+      <p v-if="person.age">
         You are a {{ person.age }} years old {{ person.gender }}
         <span class="pt-2" v-if="person.nation">from</span>
         {{ person.nation }}
         <span v-if="person.nationPercentage">({{ person.nationPercentage }}% chance)</span>
-      </span>
+      </p>
 
-      <span class="text-xl opacity-70" v-if="person.secondNation">
+      <p class="text-xl opacity-70 mt-2" v-if="person.secondNation">
         or {{ person.secondNation }}({{ person.secondNationPercentage }}% chance)
-      </span >
+      </p >
 
-      <span class="text-sm opacity-50" v-if="person.thirdNation">
+      <p class="text-sm opacity-50 mt-2" v-if="person.thirdNation">
         or {{ person.thirdNation }}({{ person.thirdNationPercentage }}%chance)
-      </span>
+      </p>
 
     </div>
 
     <div class="m-auto lg:w-1/3 sm:w-1/2 flex flex-col px-12">
-      <h1 class="text-2xl text-center text-base-content">
+      <h1 class="text-xl sm:text-2xl text-center text-base-content mb-4">
         Please enter your name here:
       </h1>
       <input
