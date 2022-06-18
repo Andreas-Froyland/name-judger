@@ -1,8 +1,8 @@
 <template>
   <div class="overflow-x-hidden">
     <header class="absolute right-20 pt-8">
-    <select data-choose-theme class="select select-bordered w-full max-w-xs">
-      <option v-for="theme in themes" :value="theme">{{theme[0].toUpperCase() + theme.slice(1)}}</option>
+    <select data-choose-theme class="select select-bordered w-full max-w-xs capitalize">
+      <option v-for="theme in themes" :value="theme" :key="theme">{{theme}}</option>
     </select>
     </header>
     <Homepage />
@@ -11,7 +11,7 @@
 
 <script>
 import Homepage from "./components/Homepage.vue";
-import { onMounted, onUpdated, onUnmounted } from "vue";
+import { onMounted } from "vue";
 import { themeChange } from "theme-change";
 
 export default {
