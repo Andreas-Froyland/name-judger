@@ -9,26 +9,26 @@
     >
       <span v-if="dataLoading">Loading data for: </span>
 
-      <span class=" capitalize" 
-        >{{person.name}}
+      <span class=" capitalize">
+        {{person.name}},
       </span>
       
-      <span v-if="!dataLoading && !person?.age"
-        >, We could not find any data about your name...
+      <span v-if="!dataLoading && !person?.age">
+        We could not find any data about your name...
       </span>
 
       <span class="pb-6" v-if="person.age">
-      , You are a {{ person.age }} years old {{ person.gender }}
+        You are a {{ person.age }} years old {{ person.gender }}
         <span class="pt-2" v-if="person.nation">from</span>
         {{ person.nation }}
         <span v-if="person.nationPercentage">({{ person.nationPercentage }}% chance)</span>
       </span>
 
-      <span class="text-xl text-gray-300" v-if="person.secondNation">
+      <span class="text-xl opacity-70" v-if="person.secondNation">
         or {{ person.secondNation }}({{ person.secondNationPercentage }}% chance)
       </span >
 
-      <span class="text-sm text-gray-500" v-if="person.thirdNation">
+      <span class="text-sm opacity-50" v-if="person.thirdNation">
         or {{ person.thirdNation }}({{ person.thirdNationPercentage }}%chance)
       </span>
 
