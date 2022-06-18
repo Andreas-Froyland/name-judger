@@ -12,9 +12,9 @@
       </p>
       <p>
         APIs used in this project:
-        <a href="https://api.genderize.io">api.genderize.io</a> - 
-        <a href="https://api.agify.io">api.agify.io</a> - 
-        <a href="https://api.nationalize.io">api.nationalize.io</a>
+        <a href="https://genderize.io">api.genderize.io</a> - 
+        <a href="https://agify.io">api.agify.io</a> - 
+        <a href="https://nationalize.io">api.nationalize.io</a>
       
       </p>
     </footer>
