@@ -10,7 +10,7 @@ It utilizes these 3 API's to guess nation, age and gender based on a name:
 - https://genderize.io
 - https://agify.io
 - https://nationalize.io
-
+- 
 ### Built using Vue 3 + Vite
 
 
@@ -31,3 +31,6 @@ npm run build
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTEzNDc3OTIxNV19
+-->
